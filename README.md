@@ -47,6 +47,8 @@ Put docker-compose.yml into PHP project directory. This file mounts folder its i
     docker-compose up
 
 You may use `docker-compose up -d` form for launching container detached from the terminal.
-    
+
+You are now free to edit php server content while its running in container.
+
 Use `docker-compose down` to shut down the server.
 
