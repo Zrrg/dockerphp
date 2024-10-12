@@ -15,7 +15,7 @@ Locate the generated rootCA.pem file by entering `mkcert -CAROOT` in your termin
  
 For Firefox, open Firefox’s menu and choose Options, then Privacy & Security. Scroll to the bottom and click View Certificates. Select the Authorities tab, click Import…, open the rootCA.pem file, and restart the browser.
 
-- Create locally-trusted development certificates for your development domain:
+Create locally-trusted development certificates for your development domain:
 
     mkcert localhost 127.0.0.1 ::1
 
