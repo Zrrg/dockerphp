@@ -6,14 +6,15 @@ Made by [DockerWebDev](https://dockerwebdev.com/tutorials/docker-php-development
 
 ## SSL certificates for local development
 
-Install [mkcert](https://github.com/FiloSottile/mkcert#installation)
+Install [mkcert](https://github.com/FiloSottile/mkcert#installation).
+
 Generate keys with it.
 
     mkcert -install
 
 Locate the generated rootCA.pem file by entering `mkcert -CAROOT` in your terminal. 
  
-For Firefox, open Firefox’s menu and choose Options, then Privacy & Security. Scroll to the bottom and click View Certificates. Select the Authorities tab, click Import…, open the rootCA.pem file, and restart the browser.
+For Firefox: Options -> Privacy & Security -> View Certificates -> Authorities tab -> Import…, open the rootCA.pem file, and restart the browser.
 
 Create locally-trusted development certificates for your development domain:
 
@@ -39,7 +40,7 @@ Take note, `-v $PWD` wouldn't be working on Windows, you have to specify full pa
 
 Or use alternative way described next.
 
-## Launch a PHP Docker Containter with Docker Compose
+## Launch a PHP Containter with Docker Compose
 
 Put docker-compose.yml into PHP project directory. This file mounts folder its in to /var/www/html of the Apache server and opens http/https ports. Then run:
 
